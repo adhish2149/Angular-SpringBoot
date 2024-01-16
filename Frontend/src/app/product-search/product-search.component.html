@@ -1,0 +1,55 @@
+<div class="MainHeading">
+  <h1>Product Search</h1>
+  
+</div>
+<button type = "submit" id = "logout" (click)="logout()">Logout</button>
+
+
+<div class = "middleContainer">
+<label for = "search">Search Product by : </label>
+<br>
+<br>
+<form [formGroup]="formDetails">
+<div>
+    
+    <input type = "radio" id = "name" value = "Name" formControlName = "Search"><label>Name</label><br>
+    
+    <input type = "radio" id = "brand" value = "Brand" formControlName = "Search"><label>Brand</label><br>
+    
+    <input type = "radio" id = "code" value = "ProductCode" formControlName = "Search"><label>Product Code</label><br>
+    
+    <input type = "radio" id = "price" value = "Price" formControlName = "Search"><label>Price</label>
+</div>
+<br>
+<br>
+<label>Enter the details here according to the search</label>&nbsp;
+<input type = "text" formControlName = "details">
+<br>
+<br>
+</form>
+
+<button type= "submit" (click)="handleSubmit()">Submit</button>
+
+<table>
+    <thead>
+        <tr>
+          <th scope="col">Product Code</th>
+          <th scope="col">Image</th>
+          <th scope="col">Name</th>
+          <th scope="col">Brand</th>
+          <th scope="col">Price</th>
+          <th scope="col">Click to Select</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr *ngFor="let proDetail of productDetails">
+                <td>{{proDetail.productCode}}</td>
+                <td><img src = {{proDetail.image}} width="150px"></td>
+                <td>{{proDetail.productName}}</td>
+                <td>{{proDetail.brand}}</td>
+                <td>{{proDetail.price}}</td>
+                <td><button type = "submit" (click)="add(proDetail.productCode)">Select</button></td>
+            </tr>
+      </tbody>
+</table>
+</div>

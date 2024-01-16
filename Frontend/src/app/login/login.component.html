@@ -1,0 +1,25 @@
+<div class="MainHeading">
+    <h1>Login As Student</h1>
+</div>
+<main>
+    <div class = "LoginHeading">
+        <h5 class = "wrong">{{errorOutput}}</h5>
+        <form [formGroup] = "loginForm">
+            <label for="name">Username</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input formControlName = "name" type = "text" name = "name">
+            <br>
+            <br>
+            <br>
+            <label for="password">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input formControlName = "password" type = "password" name = "password">
+            <br>
+            <br>
+            <br>
+
+            
+        </form>
+        <button type = "submit" (click)="handleSubmit()">Login</button>
+            
+    </div>
+</main>
+

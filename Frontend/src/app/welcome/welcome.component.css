@@ -1,0 +1,162 @@
+/* .adjust {
+    height: 2.5rem;
+    border: 1.7px solid #cfced3;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    display: flex;
+    overflow: hidden;
+    margin: 0 1rem;
+    /* width: auto; 
+  }
+  
+  .la, .las {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-icon {
+    padding: 5px;
+    background-color: #40a8c4;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #search_input {
+    outline: none;
+    font-family: inherit;
+    border-style: none;
+    padding-left: 6px;
+    font-size: 20px;
+  }
+  
+.button{
+  text-decoration: none;
+}
+
+
+.bottom {
+  
+    background-color: rgb(247, 245, 245);
+      margin-top: 2rem;
+      padding: 2.5rem;
+      width: 100%;
+      box-sizing: border-box;
+      min-height: calc(100% - 7rem);
+      float: left;
+  }
+.friend_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  h1.termheader{
+    width: 100%;
+    /* text-align-last: center; 
+    padding: 0  0 1.5rem 0;
+    font-size: 2rem;
+} */
+
+
+ *{
+    
+    box-sizing: border-box;
+}
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+    
+  }
+
+  p {
+    margin: 0;
+  }
+
+main{
+    justify-content: center;
+   
+}
+
+.MainHeading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: cadetblue;
+    max-width: 100%;
+}
+
+.LoginHeading{
+    display: flex;
+    margin: 200px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  
+
+}
+.Login{
+    margin-left: 300px;
+    margin-right: 100px;
+    
+}
+.Register{
+    margin-left: 10px;
+    margin-right: 100px;
+    
+}
+.contentButtons{
+    display: flex;
+    margin: 50px auto 32px;
+    padding: 0 16px;
+    max-width: 900px;
+    flex-direction: row;
+    align-items: center;
+  
+
+}
+button{
+    background-color: cadetblue;
+    padding: 10px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+    display: inline;
+}
+.btn{
+    background-color: cadetblue;
+    padding: 10px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.bottomContainer{
+    margin: 50px auto 32px ;
+    padding: 0 16px;
+    max-width: 900px;
+    align-items: center;
+    
+}
+.wrong{
+    color: red;
+  } 

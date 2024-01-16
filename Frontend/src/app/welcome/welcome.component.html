@@ -1,0 +1,165 @@
+
+
+
+<div class="MainHeading">
+    <h1>Product Catalog</h1>
+</div>
+<main>
+    <div class="LoginHeading">
+
+    </div>
+    <div class="contentButtons">
+        <div class="Login">
+            <div class="btn">
+                <a href="Login">Login</a>
+            </div>
+        </div>
+        <div class="Register">
+            <div class="btn">
+                <a href="Register">Register</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+     <div class="bottomContainer"> 
+        <div>
+            <form [formGroup]="searchHere">
+                <h3><Label>Search Items here</Label></h3>
+                <br>
+                <input type="text" formControlName="search">  
+            </form>
+            <br>
+            <button type="submit" (click)="handleSubmit()">Submit</button>
+        </div>
+        <br>
+        <table>
+            <thead>
+                <tr>
+
+                    <th scope="col">Product Code</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Brand</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let proDetail of results1">
+                    <td>{{proDetail.productCode}}</td>
+                    <td><img src={{proDetail.image}} width="100px"></td> 
+                    <td>{{proDetail.productName}}</td>
+                    <td>{{proDetail.brand}}</td>
+                </tr>
+                <tr *ngFor="let proDetail of results2">
+                    <td>{{proDetail.productCode}}</td>
+                    <td><img src={{proDetail.image}} width="100px"></td> 
+                    <td>{{proDetail.productName}}</td>
+                    <td>{{proDetail.brand}}</td>
+                </tr>
+            </tbody>
+        </table>
+     </div> 
+    
+</main>
+
+
+
+<!-- 
+    <section>
+        <div class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand col-6 d-flex align-items-center gap-3 justify-content-center" href="#">
+                <img  src="logo.png" alt="logo" width="200" height="41">
+              </a>
+            
+              <div class="collapse navbar-collapse col-4 justify-content-center gap-4" id="navbarSupportedContent">
+        
+                <div class="nav-bar">
+        
+                    <form class="adjust">
+                    <i class="las la-search search-icon w-1"></i>
+                    <input type="text" name="search_input" id="search_input" placeholder="Search">
+                    </form>
+                    
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filter 
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Brand</a></li>
+                  <li><a class="dropdown-item" href="#">Name</a></li>
+                  <li><a class="dropdown-item" href="#">Code</a></li>
+                  <li><a class="dropdown-item" href="#">Price</a></li>
+                </ul>
+              </div>
+              <p class="mt-3">User</p>
+              <a href="#" class="button">Login</a>
+              <a href="#" class="button">Logout</a>
+            </div>
+        </div>
+    
+        <div class="bottom">
+            <h1 class="termheader">Products</h1>
+            
+            <div class="friend_container">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://rukminim1.flixcart.com/image/832/832/kfoapow0-0/shirt/c/4/1/s-hlsh010234-highlander-original-imafw2gsg3tzae69.jpeg?q=70" class="card-img-top" alt="Shirt">
+                    <div class="card-body">
+                    <h5 class="card-title">Red Tape</h5>
+                    <p>₹649</p>
+                    <p class="card-text">Men Slim Fit Checkered Spread Collar Casual Shirt</p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://rukminim1.flixcart.com/image/832/832/kfoapow0-0/shirt/c/4/1/s-hlsh010234-highlander-original-imafw2gsg3tzae69.jpeg?q=70" class="card-img-top" alt="Shirt">
+                    <div class="card-body">
+                    <h5 class="card-title">Red Tape</h5>
+                    <p>₹649</p>
+                    <p class="card-text">Men Slim Fit Checkered Spread Collar Casual Shirt</p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://rukminim1.flixcart.com/image/832/832/kfoapow0-0/shirt/c/4/1/s-hlsh010234-highlander-original-imafw2gsg3tzae69.jpeg?q=70" class="card-img-top" alt="Shirt">
+                    <div class="card-body">
+                    <h5 class="card-title">Red Tape</h5>
+                    <p>₹649</p>
+                    <p class="card-text">Men Slim Fit Checkered Spread Collar Casual Shirt</p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://rukminim1.flixcart.com/image/832/832/kfoapow0-0/shirt/c/4/1/s-hlsh010234-highlander-original-imafw2gsg3tzae69.jpeg?q=70" class="card-img-top" alt="Shirt">
+                    <div class="card-body">
+                    <h5 class="card-title">Red Tape</h5>
+                    <p>₹649</p>
+                    <p class="card-text">Men Slim Fit Checkered Spread Collar Casual Shirt</p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://rukminim1.flixcart.com/image/832/832/kfoapow0-0/shirt/c/4/1/s-hlsh010234-highlander-original-imafw2gsg3tzae69.jpeg?q=70" class="card-img-top" alt="Shirt">
+                    <div class="card-body">
+                    <h5 class="card-title">Red Tape</h5>
+                    <p>₹649</p>
+                    <p class="card-text">Men Slim Fit Checkered Spread Collar Casual Shirt</p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://rukminim1.flixcart.com/image/832/832/kfoapow0-0/shirt/c/4/1/s-hlsh010234-highlander-original-imafw2gsg3tzae69.jpeg?q=70" class="card-img-top" alt="Shirt">
+                    <div class="card-body">
+                    <h5 class="card-title">Red Tape</h5>
+                    <p>₹649</p>
+                    <p class="card-text">Men Slim Fit Checkered Spread Collar Casual Shirt</p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+     -->

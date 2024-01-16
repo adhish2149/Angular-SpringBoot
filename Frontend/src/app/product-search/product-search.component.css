@@ -1,0 +1,64 @@
+*{
+    
+    box-sizing: border-box;
+}
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+    
+  }
+
+  p {
+    margin: 0;
+  }
+
+main{
+    justify-content: center;
+   
+}
+
+.MainHeading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: cadetblue;
+    max-width: 100%;
+}
+
+.LoginHeading{
+    display: flex;
+    margin: 200px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  
+
+}
+.middleContainer{
+    margin-top: 100px;
+    align-items: center;
+}
+button{
+    background-color: cadetblue;
+    padding: 10px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+    
+}
+#logout{
+    float: right;
+    background-color: grey  ;
+}

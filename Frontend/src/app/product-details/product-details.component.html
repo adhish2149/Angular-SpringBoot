@@ -1,0 +1,40 @@
+<div class="MainHeading">
+    <h1>Product Details</h1>
+  </div>
+
+  <button type = "submit" id = "logout" (click)="logout()">Logout</button>
+<main>
+<table>
+
+    <tr>
+        <td rowspan = "5"><img src = {{img}} width="250px"></td>
+        <td>Product Code : {{procode}}</td>
+    </tr>
+    <tr>
+        
+        <td>Product Name : {{name}}</td>
+    </tr>
+    <tr>
+        
+        <td>Product Brand : {{brand}}</td>
+    </tr>
+    <tr>
+        
+        <td>Product Price : {{price}}</td>
+    </tr>
+    <tr>
+        <td>Product Details : {{details}}</td>
+    </tr>
+    
+</table>
+
+<br>
+<form [formGroup]="formDetails">
+<label>Enter pincode</label>
+<input type="text" formControlName = "pincode">
+check servicbility
+<button type = "submit" (click)="handleSubmit()"> is it servicible</button><BR>
+</form>
+<br>
+{{result}}
+</main>

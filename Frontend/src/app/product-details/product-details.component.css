@@ -1,0 +1,55 @@
+*{
+    
+    box-sizing: border-box;
+}
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+    
+  }
+
+  p {
+    margin: 0;
+  }
+
+main{
+    justify-content: center;
+    margin-left: 300px;
+   
+}
+
+.MainHeading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: cadetblue;
+    max-width: 100%;
+}
+.midContainer{
+    justify-content: center;
+}
+table{
+    margin-top: 100px;
+}
+#logout{
+    float: right;
+    background-color: grey  ;
+}
+button{
+    background-color: cadetblue;
+    padding: 10px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+    
+}

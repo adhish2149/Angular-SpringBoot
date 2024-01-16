@@ -1,0 +1,57 @@
+*{
+    
+    box-sizing: border-box;
+}
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+.MainHeading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: cadetblue;
+    max-width: 100%;
+}
+
+.LoginHeading{
+    display: flex;
+    margin: 200px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.LoginAsTeacher{
+    margin-left: 10px;
+    margin-right: 100px;
+}
+button{
+    background-color: cadetblue;
+    padding: 10px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.wrong{
+  color: red;
+}
+.error{
+  border: 1px solid red;
+}
